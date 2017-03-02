@@ -1,0 +1,27 @@
+{
+    "name": "apiarchitect/Blog",
+    "description": "ApiArchitect Blog Component.",
+    "keywords": ["Blog", "ApiArchitect", "lumen"],
+    "license": "CC BY-NC-SA",
+    "type": "project",
+    "require": {
+        "php": ">=7.0.0",
+        "apiarchitect/auth": "dev-master",
+        "apiarchitect/compass": "dev-master"
+    },    
+    "autoload": {
+        "psr-4": {
+            "Jkirkby91\\Boilers\\NodeEntityBoiler\\": "src/"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "ApiArchitect\\Blog\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ApiArchitect\\Blog\\Tests\\": "tests/"
+        }
+    }
+}
