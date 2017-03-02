@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Transformers;
+namespace ApiArchitect\Blog\Http\Transformers;
 
 use ApiArchitect\Blog\Entities\Blog;
 use League\Fractal\TransformerAbstract;

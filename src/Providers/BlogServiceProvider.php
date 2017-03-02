@@ -1,6 +1,6 @@
 <?php
 
-namespace ApiArchitect\Compass\Providers;
+namespace ApiArchitect\Blog\Providers;
 
 /**
  * Class BlogServiceProvider
