@@ -23,7 +23,7 @@ class Blog Extends BlogPosting
 {
 	/**
 	 * @var ArrayCollection
-	 * @ORM\ManyToMany(targetEntity="Tag", cascade={"all"}, fetch="EAGER")
+	 * @ORM\ManyToMany(targetEntity="Tags", cascade={"all"}, fetch="EAGER")
 	 * @ORM\JoinTable(name="blog_tag",
 	 *      joinColumns={@ORM\JoinColumn(name="blog_id", referencedColumnName="id")},
 	 *      inverseJoinColumns={@ORM\JoinColumn(name="tag_id", referencedColumnName="id", unique=true)})

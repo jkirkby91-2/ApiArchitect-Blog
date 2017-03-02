@@ -48,7 +48,7 @@ class BlogServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     public function registerServiceProviders()
     {
-        $this->app->register(\ApiArchitect\Blog\Providers\TagRepositoryServiceProvider::class);
+        $this->app->register(\ApiArchitect\Blog\Providers\TagsRepositoryServiceProvider::class);
         $this->app->register(\ApiArchitect\Blog\Providers\BlogRepositoryServiceProvider::class);
         $this->app->register(\ApiArchitect\Blog\Providers\CatagoryRepositoryServiceProvider::class);
     }
