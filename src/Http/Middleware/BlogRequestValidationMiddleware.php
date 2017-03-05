@@ -38,6 +38,6 @@ class BlogRequestValidationMiddleware extends ValidatedRequest
     public function handle(ServerRequestInterface $request, Closure $next)
     {
         $this->validateRequest($request);
-        $next($request);
+        return $next($request);
     } 
 }

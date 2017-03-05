@@ -66,7 +66,7 @@ class BlogServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     public function registerMiddleware()
     {
-        $this->app->routeMiddleware(['requestValidator' => \ApiArchitect\Blog\Http\Middleware\BlogRequestValidationMiddleware::class]);
+        $this->app->routeMiddleware(['BlogRequestValidator' => \ApiArchitect\Blog\Http\Middleware\BlogRequestValidationMiddleware::class]);
     }
 
      /**
