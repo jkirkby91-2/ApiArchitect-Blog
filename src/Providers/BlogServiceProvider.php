@@ -66,7 +66,7 @@ class BlogServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     public function registerMiddleware()
     {
-        //
+        $this->app->routeMiddleware(['requestValidator' => \ApiArchitect\Blog\Http\Middleware\BlogRequestValidationMiddleware::class]);
     }
 
      /**
@@ -77,7 +77,7 @@ class BlogServiceProvider extends \Illuminate\Support\ServiceProvider
          $this->app->bind(\ApiArchitect\Blog\Http\Controllers\BlogController::class, function($app) {
              return new \ApiArchitect\Blog\Http\Controllers\BlogController(
                  $app['em']->getRepository(\ApiArchitect\Blog\Entities\Blog::class),
-                 new \ApiArchitect\Blog\Http\Transformers\UserTransformer
+                 new \ApiArchitect\Blog\Http\Transformers\BlogTransformer
              );
          });
      }

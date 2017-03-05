@@ -44,12 +44,13 @@ class Blog Extends BlogPosting
 	 * @param    $tag   
 	 * @param    $catagory   
 	 */
-	public function __construct($auhor, $name)
+	public function __construct($articleBody, $wordCount, $author, $name)
 	{
 		parent::__construct($articleBody, $wordCount, $author, $name);
 
 		$this->tag = new ArrayCollection();
 		$this->catagory = new ArrayCollection();
+		$this->setNodeType('Blog');
 	}
 
 	/**

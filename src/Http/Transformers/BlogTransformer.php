@@ -18,11 +18,12 @@ class BlogTransformer extends TransformerAbstract implements TransformerContract
      * @param $address
      * @return array
      */
-    public function transform(Blog $blog)
+    public function transform($blog)
     {
         return [
-            'name'                 => $blog->name(),
-            'article'              => $blog->article(),            
+            'name'                 => $blog->getName(),
+            'article'              => $blog->getArticleBody(),
+            'author'               => $blog->getAuthor()->getUsername()            
         ];
     }
 }
